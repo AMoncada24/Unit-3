@@ -12,9 +12,9 @@ Type the following code:
     5   print(random.randint(0, 3))
 2.  In your Notebook
 Respond to the following
-    1.  What does randint() do?
+    1.  What does randint() do? Randomizes the choice between two variables and prints it.
 
-    2.  What do the values 0 and 3 do? Try changing those numbers, rerun the program, and write down what changed.
+    2.  What do the values 0 and 3 do? Try changing those numbers, rerun the program, and write down what changed. 0 and 3 set the upper and lower bounds of what integers the program can print.
 
-    3.  What is the difference between random.randint(0,3) and print(random.randint(0,3))?
+    3.  What is the difference between random.randint(0,3) and print(random.randint(0,3))? There seems to be no noticeable change as the former already prints out the statement.
 '''
