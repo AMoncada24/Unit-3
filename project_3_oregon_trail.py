@@ -50,7 +50,7 @@ def hunt():
 def status():
   print("Health: ", hp)
   print("Food: ", food)
-  print("Miles traveled: ", 2000 - miles_left)
+  print("Miles left: ", miles_left)
   print("Today's Date: " + str(curr_month) + "/" + str(curr_day))
 
 def help():
@@ -95,8 +95,8 @@ while(game_over == False):
   else:
     print("That is not an option.")
   
-  if (food == 0 or hp == 0 or curr_day == 31 and curr_month == 12):
+  if (food <= 0 or hp <= 0 or curr_day >= 31 and curr_month >= 12):
     game_over == True 
     print("You failed.")
-  elif miles_left == 0:
+  elif miles_left <= 0:
     print("You got to Oregon! Congratulations!")
